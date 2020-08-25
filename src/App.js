@@ -5,6 +5,8 @@ import Home from './containers/Home/index';
 import Header from './components/Header/index';
 import Hero from './components/Hero/index';
 import Contact from './containers/Contact/index';
+import Post from './containers/Post/index';
+import About from './containers/About/index';
 
 import './App.css';
 
@@ -16,6 +18,8 @@ function App() {
         <Hero />
         <Route path="/" exact component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
+        <Route path="/post" component={Post}></Route>
+        <Route path="/about" component={About}></Route>
       </div>
     </Router>
   );
