@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Card from '../../components/UI/Card/index';
-
 import './style.css';
 import Blogpost from '../../components/Blogpost';
 import Sidebar from '../../components/Sidebar';
