@@ -22,10 +22,48 @@ const Sidebar = (props) => {
             alt="JorgeDv"
           />
         </div>
+        <div className="cardBody">
+          <p className="personalBio">
+            My name is Jorge. I am a Journalist and Full Stack Developer based
+            in Buenos Aires, Argentina. Basically i am here to tell you what is
+            going on around the world with an independent perspective.
+          </p>
+        </div>
       </Card>
-      <Card>
+      <Card
+        style={{
+          marginBottom: '20px',
+          padding: '20px',
+          boxSizing: 'border-box',
+        }}
+      >
         <div className="cardHeader">
           <span>Social Network</span>
+        </div>
+      </Card>
+      <Card
+        style={{
+          marginBottom: '20px',
+          padding: '20px',
+          boxSizing: 'border-box',
+        }}
+      >
+        <div className="cardHeader">
+          <span>Recent Posts</span>
+        </div>
+        <div className="recentPosts">
+          <div className="recentPost">
+            <h3>Post Title</h3>
+            <span>August 23, 2020</span>
+          </div>
+          <div className="recentPost">
+            <h3>Post Title</h3>
+            <span>August 23, 2020</span>
+          </div>
+          <div className="recentPost">
+            <h3>Post Title</h3>
+            <span>August 23, 2020</span>
+          </div>
         </div>
       </Card>
     </div>

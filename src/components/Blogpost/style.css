@@ -1,6 +1,5 @@
 .blogPostContainer {
   width: 70%;
-  background: #fff;
 }
 
 .blogHeader {
@@ -26,11 +25,12 @@
   font-style: italic;
   padding: 10px 0;
   display: block;
+  color: #6c6c6c;
 }
 
 .postImageContainer {
   width: 100%;
-  padding: 6px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
