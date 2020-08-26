@@ -12,7 +12,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <Card>
+      <Card style={{ margin: '20px 0' }}>
         <div className="galleryPost" style={galleryStyle}>
           <section className="gallerySection" style={{ width: '70%' }}>
             <div>
@@ -50,6 +50,9 @@ const Home = (props) => {
           </section>
         </div>
       </Card>
+      <Card style={{ margin: '20px 0' }}>Post 1</Card>
+      <Card style={{ margin: '20px 0' }}>Post 2</Card>
+      <Card style={{ margin: '20px 0' }}>Post 3</Card>
     </div>
   );
 };

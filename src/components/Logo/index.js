@@ -4,7 +4,7 @@ import './style.css';
 const Logo = () => {
   return (
     <div className="logo">
-      <a href="/">JorgeDV</a>
+      <a href="/">JWD International Media</a>
     </div>
   );
 };
