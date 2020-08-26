@@ -6,20 +6,26 @@ import './style.css';
 
 const Blogpost = (props) => {
   const [post, setPost] = useState({});
+  const [postId, setPostId] = useState('');
 
   useEffect(() => {
     const postId = props.match.params.postId;
-    console.log(blogPost);
-    const post = blogPost.data.find((post) => post.id === postId);
+    const post = blogPost.data.find((post) => post.id == postId);
     setPost(post);
-  }, [props.match.params.postId]);
+    setPostId(postId);
+  }, [post, props.match.params.postId]);
 
   return (
     <div className="blogPostContainer">
       <Card>
         <div className="blogHeader">
           <span className="blogCategory">Featured</span>
-          <h1 className="postTitle">{post.author}</h1>
+          <h1 className="postTitle">
+            {
+              // @ts-ignore
+              post.blogTitle
+            }
+          </h1>
           <span className="postedBy">
             posted on August 25, 2020 by Jorge Dv
           </span>
